@@ -1,0 +1,6 @@
+8 full formal block intertwining identities: PASS
+4 mixed diagonal compositions = d*pi_bar(i): PASS
+8 reverse same-axis compositions = 0: PASS
+Cartan semilinearity, central parity and arrow weights: PASS
+SL2 orbit of mixed seed has rank 4 and equals tensor-flip relations: PASS
+Scope: exact formal/rational identities; no analytic screening certification.

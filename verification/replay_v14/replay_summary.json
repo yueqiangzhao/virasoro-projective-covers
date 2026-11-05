@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "parallelism": 1,
+  "arithmetic": "exact integers and fractions.Fraction",
+  "source_sha256": {
+    "mixed_potential_space.py": "208a761ac3cea80b16148ba1846d7b0a1d62e699519a305461d654a61cc06d25",
+    "mixed_candidate.py": "ebf05b7ce004d7f780113f9d5d8ba978aa393ab889e7c8aaf0112eb47c63b586",
+    "mixed_explicit_relations.py": "98b7148d63eb0876ce6ba0ed5a3e6bf8600b1bec30048e812e9acf2af32f83a4",
+    "candidate_certify.py": "a21c51dd128223532b7743fd0265aa916b059b6693a9e8c97fbc689ae01e758c",
+    "finite_multiplication.py": "74a999848e15eb348085705b770715ab22fe604db6ac7f7f8e27eb95d691442e",
+    "center_algebra.py": "4977eff94b8d5c45c35b0f5f799ac7db2b595a78d8eee34361fad6421e6ef35c",
+    "actual_projection_check.py": "017987796ce30e864fb91d6538fa8972c6cbcbc8b922797400ef638334fe8475",
+    "transport_check.py": "3dba22f1197aa97b93dfa7f4ebe4766f93b4dab12abf096b2c6310b00f0cd3df",
+    "verify_quadratic_table.py": "335de854310b99980ae1066a99b70c86121ca7d4fd3a41f8caca323969b9f80a",
+    "check_constants.py": "ededf2e29375b4b1a04b66e0c797856aa7f702a14d82bf3ff5e83b99de5fa9ec"
+  },
+  "runs": [
+    {
+      "script": "candidate_certify.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/candidate_certify.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.619
+    },
+    {
+      "script": "mixed_explicit_relations.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/mixed_explicit_relations.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.422
+    },
+    {
+      "script": "finite_multiplication.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/finite_multiplication.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.581
+    },
+    {
+      "script": "verify_quadratic_table.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/verify_quadratic_table.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.243
+    },
+    {
+      "script": "check_constants.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/check_constants.py",
+        "--data",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/finite_multiplication.json",
+        "--tex",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/source/constants.tex"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.036
+    },
+    {
+      "script": "center_algebra.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/center_algebra.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.056
+    },
+    {
+      "script": "actual_projection_check.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/actual_projection_check.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.021
+    },
+    {
+      "script": "transport_check.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/987d33f5152f/Virasoro_JLMS_v14_20261104/review/replay_v14/working/transport_check.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.128
+    }
+  ],
+  "scope": "Exact finite algebra and bounded transport checks; the VOA comparison and uniform-index bridge are the manuscript proofs."
+}

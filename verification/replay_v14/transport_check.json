@@ -1,0 +1,150 @@
+{
+  "claim": "Polynomial-coordinate recoupling equality on every monomial in each tested channel",
+  "evidence_class": "Exact finite rational computation; not a uniform proof or VOA identification",
+  "program_to_mathematics": "Dictionary keys are monomial indices in Sym^ell(C^2) tensor Sym^t(C^2); values are Fraction coefficients",
+  "algorithm": "Expand both normalized embeddings, apply derivative transvectant, compare all coefficients with the closed finite sum",
+  "coverage": {
+    "j_k_ell": [
+      0,
+      10
+    ],
+    "r_s": [
+      0,
+      2
+    ],
+    "t": "all Clebsch-Gordan channels 0..r+s, including output-inadmissible channels"
+  },
+  "tested_channels": 623,
+  "tested_input_monomials": 3805,
+  "failures": [],
+  "return_channel_examples": [
+    {
+      "j": 0,
+      "via_j_plus_1": [
+        "2",
+        "0"
+      ],
+      "via_j_minus_1": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "j": 1,
+      "via_j_plus_1": [
+        "3/2",
+        "1/2"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 2,
+      "via_j_plus_1": [
+        "4/3",
+        "2/3"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 3,
+      "via_j_plus_1": [
+        "5/4",
+        "3/4"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 4,
+      "via_j_plus_1": [
+        "6/5",
+        "4/5"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 5,
+      "via_j_plus_1": [
+        "7/6",
+        "5/6"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 6,
+      "via_j_plus_1": [
+        "8/7",
+        "6/7"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 7,
+      "via_j_plus_1": [
+        "9/8",
+        "7/8"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 8,
+      "via_j_plus_1": [
+        "10/9",
+        "8/9"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 9,
+      "via_j_plus_1": [
+        "11/10",
+        "9/10"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "j": 10,
+      "via_j_plus_1": [
+        "12/11",
+        "10/11"
+      ],
+      "via_j_minus_1": [
+        "-1",
+        "1"
+      ]
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "arithmetic": "fractions.Fraction and arbitrary-precision integers",
+    "parallelism": 1
+  }
+}

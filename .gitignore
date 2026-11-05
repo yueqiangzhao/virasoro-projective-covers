@@ -1,0 +1,6 @@
+# Reproduction outputs and transient Python files
+replay_fresh/
+replay_*/
+__pycache__/
+*.py[cod]
+.DS_Store

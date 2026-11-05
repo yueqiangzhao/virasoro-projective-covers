@@ -1,0 +1,3 @@
+explicit relation vectors 53 rank 53 potential annihilator checks 410
+N centrality checked against all reverse arrows
+N^2 socle trace coefficients {'T': '2', 'A': '-6', 'B': '2', 'C': '6', 'D': '-2'}

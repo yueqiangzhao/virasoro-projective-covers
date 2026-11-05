@@ -1,0 +1,21 @@
+central degree2 dim 3 loopbasis ['TAT', 'ATA', 'A+C-A', 'BTB', 'B+C-B', 'C+B-C', 'C+A-C', 'D+B-D', 'D+A-D']
+N0 {'C+A-C': '1', 'C+B-C': '-1', 'B+C-B': '-1', 'BTB': '-1', 'A+C-A': '1', 'ATA': '1', 'TAT': '1/2'}
+squares {'T': '1/2', 'A': '0', 'B': '0', 'C': '2', 'D': '0'}
+N1 {'D+B-D': '1', 'C+B-C': '-1', 'A+C-A': '2', 'ATA': '1'}
+squares {'T': '0', 'A': '-2', 'B': '0', 'C': '0', 'D': '0'}
+N2 {'D+A-D': '1', 'C+B-C': '-1', 'B+C-B': '1', 'A+C-A': '1', 'ATA': '1', 'TAT': '1/2'}
+squares {'T': '1/2', 'A': '0', 'B': '0', 'C': '0', 'D': '0'}
+potential degree 0 5
+potential degree 1 20
+potential degree 2 33
+potential degree 3 20
+potential degree 4 5
+quadratic kernel dim 53
+quadratic quotient degree 3 20
+quadratic quotient degree 4 5
+quadratic quotient degree 5 0
+explicit relation vectors 53 rank 53 potential annihilator checks 410
+N centrality checked against all reverse arrows
+N^2 socle trace coefficients {'T': '2', 'A': '-6', 'B': '2', 'C': '6', 'D': '-2'}
+Independent endpoint Hilbert, adjacency-count, E/F-invariance checks: PASS
+E/F checks 1296 path counts [5, 20, 86, 360, 1548, 6480]

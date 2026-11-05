@@ -1,0 +1,10 @@
+{
+  "basis_dimension": 83,
+  "multiplets": 55,
+  "nonzero_products": 480,
+  "nonzero_channels": 270,
+  "associativity_composable_triples_degree_le_4": 4584,
+  "equivariance_equations": 2834,
+  "channel_coefficient_equations": 1146
+}
+All other products and channels are zero. All arithmetic exact.

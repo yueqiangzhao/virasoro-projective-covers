@@ -1,0 +1,113 @@
+{
+  "scope": "Full centre of the fixed explicit quadratic candidate Q; no VOA comparison",
+  "input": "finite_multiplication.json",
+  "input_sha256": "ecb84226d93e015f95c78c3e8eb43b0abf669e8d925749b0cb8273d37c9facc4",
+  "script_sha256": "4977eff94b8d5c45c35b0f5f799ac7db2b595a78d8eee34361fad6421e6ef35c",
+  "program_bridge": "Read the certified complete Q basis/table; commutation with all idempotents and arrows is necessary and sufficient for centrality",
+  "centre_dimension": 9,
+  "centre_dimension_by_path_degree": {
+    "0": 1,
+    "1": 0,
+    "2": 3,
+    "3": 0,
+    "4": 5
+  },
+  "commutator_constraint_rank": 74,
+  "degree_two_centre_generators": [
+    "N(1,0,0)",
+    "N(0,1,0)",
+    "N(0,0,1)"
+  ],
+  "product_matrix_rows": [
+    "T",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "product_matrix_columns": [
+    "X^2",
+    "Y^2",
+    "Z^2",
+    "XY",
+    "XZ",
+    "YZ"
+  ],
+  "product_matrix": [
+    [
+      "1/2",
+      "0",
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "-2",
+      "0",
+      "-1",
+      "0",
+      "-1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "2",
+      "0",
+      "0",
+      "1",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ]
+  ],
+  "quadratic_kernel": "X^2+Y^2-Z^2-2XY",
+  "presentation": "C[u,v,w]/(uv,(u,v,w)^3), u=X-Y-Z, v=X-Y+Z, w=Y",
+  "basis_product_checks": 81,
+  "cubic_generator_checks": 27,
+  "centrality_checks_all_basis": 249,
+  "socle_dimension": 5,
+  "sample_ranks_m_n_m_n_squared": {
+    "u": [
+      3,
+      1
+    ],
+    "v": [
+      3,
+      1
+    ],
+    "w": [
+      4,
+      1
+    ],
+    "u+v+w": [
+      4,
+      1
+    ],
+    "u^2": [
+      1,
+      0
+    ]
+  },
+  "general_rank_boundary": "All-parameter rank and zero-product claims are proved algebraically in center_algebra.tex, not inferred from these samples",
+  "arithmetic": "Exact Fraction over Q; one serial process; no added dependencies",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "nonunit_rows": 165,
+  "unit_channels": 105,
+  "arithmetic": "fractions.Fraction",
+  "source_sha256": "91fd396ec21d42d1ebf2fbbbacef2bb6d65ea0641f5383d821291ae07e336417",
+  "table_sha256": "ecb84226d93e015f95c78c3e8eb43b0abf669e8d925749b0cb8273d37c9facc4"
+}

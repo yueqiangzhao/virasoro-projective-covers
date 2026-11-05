@@ -1,0 +1,197 @@
+\section{Nonunit finite multiplication constants}
+\label{sec:constant-table}
+The table gives the constants $c_{N,M}^{P}$ in chronological input
+order: first $N$, then $M$. Every unlisted nonunit channel is zero; the
+unit channels have coefficient $1$ on their compatible multiplets. The
+names and representation degrees are those of the fixed basis in Section~\ref{sec:finite-basis} and the accompanying
+exact JSON data.
+The code names correspond to the multiplets of
+Section~\ref{sec:finite-basis} as follows. The last column gives highest
+weight, independently of path degree.
+\[
+\begin{array}{c|c|c|c}
+\text{name}&\text{mathematical multiplet}&\text{path degree}&\text{highest weight}\\\hline
+\texttt{a\_ij}&a_{ij}&1&0\ (T\leftrightarrow A,B),\ 1\ (\text{outer})\\
+\texttt{t},\texttt{x\_i},\texttt{y\_i}&t,x_i,y_i&2&0\\
+\texttt{b0\_ik},\texttt{b1\_ik},\texttt{b2\_ik}&b^0_{ik},b^1_{ik},b^2_{ik}&2&0,1,2\\
+\texttt{za\_ij}&Z_{\rm aux}a_{ij}&3&\text{as }a_{ij}\\
+\texttt{s\_i}&s_i&4&0
+\end{array}
+\]
+Here $Z_{\rm aux}$ is the central element with corners
+$(t,x_A-3y_A,x_B+y_B,x_C-3y_C,x_D+y_D)$, not the generator
+$Z=N(0,0,1)$ of the centre section. The tensor contraction is exactly
+the unnormalized transvectant in \eqref{tr:eq:T},
+in the input order
+$N$ then $M$; thus no additional sign conversion is implicit in this table.
+
+\begin{longtable}{llll}\hline $N$ & $M$ & $P$ & $c_{N,M}^{P}$\\\hline\endhead
+\multicolumn{4}{l}{\textit{Degree-one first input}}\\\hline
+\texttt{a\_TA} & \texttt{a\_AT} & \texttt{t} & $1$\\
+\texttt{a\_TA} & \texttt{a\_AC} & \texttt{b1\_TC} & $1$\\
+\texttt{a\_TA} & \texttt{a\_AD} & \texttt{b1\_TD} & $1$\\
+\texttt{a\_TA} & \texttt{x\_A} & \texttt{za\_TA} & $\frac{-1}{2}$\\
+\texttt{a\_TA} & \texttt{y\_A} & \texttt{za\_TA} & $\frac{-1}{2}$\\
+\texttt{a\_TA} & \texttt{b0\_AB} & \texttt{za\_TB} & $1$\\
+\texttt{a\_TA} & \texttt{za\_AT} & \texttt{s\_T} & $2$\\
+\texttt{a\_TB} & \texttt{a\_BT} & \texttt{t} & $-1$\\
+\texttt{a\_TB} & \texttt{a\_BC} & \texttt{b1\_TC} & $1$\\
+\texttt{a\_TB} & \texttt{a\_BD} & \texttt{b1\_TD} & $-1$\\
+\texttt{a\_TB} & \texttt{x\_B} & \texttt{za\_TB} & $\frac{1}{2}$\\
+\texttt{a\_TB} & \texttt{y\_B} & \texttt{za\_TB} & $\frac{1}{2}$\\
+\texttt{a\_TB} & \texttt{b0\_BA} & \texttt{za\_TA} & $-1$\\
+\texttt{a\_TB} & \texttt{za\_BT} & \texttt{s\_T} & $-2$\\
+\texttt{a\_AT} & \texttt{a\_TA} & \texttt{x\_A} & $-1$\\
+\texttt{a\_AT} & \texttt{a\_TA} & \texttt{y\_A} & $-1$\\
+\texttt{a\_AT} & \texttt{a\_TB} & \texttt{b0\_AB} & $1$\\
+\texttt{a\_AT} & \texttt{t} & \texttt{za\_AT} & $1$\\
+\texttt{a\_AT} & \texttt{b1\_TC} & \texttt{za\_AC} & $\frac{1}{3}$\\
+\texttt{a\_AT} & \texttt{b1\_TD} & \texttt{za\_AD} & $-1$\\
+\texttt{a\_AT} & \texttt{za\_TA} & \texttt{s\_A} & $2$\\
+\texttt{a\_AC} & \texttt{a\_CA} & \texttt{x\_A} & $1$\\
+\texttt{a\_AC} & \texttt{a\_CB} & \texttt{b0\_AB} & $\frac{1}{2}$\\
+\texttt{a\_AC} & \texttt{a\_CB} & \texttt{b2\_AB} & $1$\\
+\texttt{a\_AC} & \texttt{y\_C} & \texttt{za\_AC} & $\frac{-1}{3}$\\
+\texttt{a\_AC} & \texttt{b0\_CD} & \texttt{za\_AD} & $-1$\\
+\texttt{a\_AC} & \texttt{b2\_CD} & \texttt{za\_AD} & $\frac{1}{2}$\\
+\texttt{a\_AC} & \texttt{b1\_CT} & \texttt{za\_AT} & $\frac{-1}{2}$\\
+\texttt{a\_AC} & \texttt{za\_CA} & \texttt{s\_A} & $-3$\\
+\texttt{a\_AD} & \texttt{a\_DA} & \texttt{y\_A} & $1$\\
+\texttt{a\_AD} & \texttt{a\_DB} & \texttt{b0\_AB} & $\frac{-1}{2}$\\
+\texttt{a\_AD} & \texttt{a\_DB} & \texttt{b2\_AB} & $1$\\
+\texttt{a\_AD} & \texttt{y\_D} & \texttt{za\_AD} & $1$\\
+\texttt{a\_AD} & \texttt{b0\_DC} & \texttt{za\_AC} & $\frac{1}{3}$\\
+\texttt{a\_AD} & \texttt{b2\_DC} & \texttt{za\_AC} & $\frac{-1}{6}$\\
+\texttt{a\_AD} & \texttt{b1\_DT} & \texttt{za\_AT} & $\frac{-1}{2}$\\
+\texttt{a\_AD} & \texttt{za\_DA} & \texttt{s\_A} & $1$\\
+\texttt{a\_BT} & \texttt{a\_TA} & \texttt{b0\_BA} & $1$\\
+\texttt{a\_BT} & \texttt{a\_TB} & \texttt{x\_B} & $-1$\\
+\texttt{a\_BT} & \texttt{a\_TB} & \texttt{y\_B} & $-1$\\
+\texttt{a\_BT} & \texttt{t} & \texttt{za\_BT} & $1$\\
+\texttt{a\_BT} & \texttt{b1\_TC} & \texttt{za\_BC} & $-1$\\
+\texttt{a\_BT} & \texttt{b1\_TD} & \texttt{za\_BD} & $1$\\
+\texttt{a\_BT} & \texttt{za\_TB} & \texttt{s\_B} & $-2$\\
+\texttt{a\_BC} & \texttt{a\_CA} & \texttt{b0\_BA} & $\frac{1}{2}$\\
+\texttt{a\_BC} & \texttt{a\_CA} & \texttt{b2\_BA} & $1$\\
+\texttt{a\_BC} & \texttt{a\_CB} & \texttt{x\_B} & $1$\\
+\texttt{a\_BC} & \texttt{x\_C} & \texttt{za\_BC} & $1$\\
+\texttt{a\_BC} & \texttt{b0\_CD} & \texttt{za\_BD} & $1$\\
+\texttt{a\_BC} & \texttt{b2\_CD} & \texttt{za\_BD} & $\frac{1}{2}$\\
+\texttt{a\_BC} & \texttt{b1\_CT} & \texttt{za\_BT} & $\frac{1}{2}$\\
+\texttt{a\_BC} & \texttt{za\_CB} & \texttt{s\_B} & $1$\\
+\texttt{a\_BD} & \texttt{a\_DA} & \texttt{b0\_BA} & $\frac{-1}{2}$\\
+\texttt{a\_BD} & \texttt{a\_DA} & \texttt{b2\_BA} & $1$\\
+\texttt{a\_BD} & \texttt{a\_DB} & \texttt{y\_B} & $1$\\
+\texttt{a\_BD} & \texttt{x\_D} & \texttt{za\_BD} & $1$\\
+\texttt{a\_BD} & \texttt{b0\_DC} & \texttt{za\_BC} & $1$\\
+\texttt{a\_BD} & \texttt{b2\_DC} & \texttt{za\_BC} & $\frac{1}{2}$\\
+\texttt{a\_BD} & \texttt{b1\_DT} & \texttt{za\_BT} & $\frac{-1}{2}$\\
+\texttt{a\_BD} & \texttt{za\_DB} & \texttt{s\_B} & $1$\\
+\texttt{a\_CA} & \texttt{a\_AT} & \texttt{b1\_CT} & $1$\\
+\texttt{a\_CA} & \texttt{a\_AC} & \texttt{x\_C} & $1$\\
+\texttt{a\_CA} & \texttt{a\_AD} & \texttt{b0\_CD} & $\frac{1}{2}$\\
+\texttt{a\_CA} & \texttt{a\_AD} & \texttt{b2\_CD} & $1$\\
+\texttt{a\_CA} & \texttt{y\_A} & \texttt{za\_CA} & $\frac{-1}{3}$\\
+\texttt{a\_CA} & \texttt{b0\_AB} & \texttt{za\_CB} & $-1$\\
+\texttt{a\_CA} & \texttt{b2\_AB} & \texttt{za\_CB} & $\frac{1}{2}$\\
+\texttt{a\_CA} & \texttt{za\_AC} & \texttt{s\_C} & $3$\\
+\texttt{a\_CB} & \texttt{a\_BT} & \texttt{b1\_CT} & $1$\\
+\texttt{a\_CB} & \texttt{a\_BC} & \texttt{y\_C} & $1$\\
+\texttt{a\_CB} & \texttt{a\_BD} & \texttt{b0\_CD} & $\frac{-1}{2}$\\
+\texttt{a\_CB} & \texttt{a\_BD} & \texttt{b2\_CD} & $1$\\
+\texttt{a\_CB} & \texttt{y\_B} & \texttt{za\_CB} & $1$\\
+\texttt{a\_CB} & \texttt{b0\_BA} & \texttt{za\_CA} & $\frac{1}{3}$\\
+\texttt{a\_CB} & \texttt{b2\_BA} & \texttt{za\_CA} & $\frac{-1}{6}$\\
+\texttt{a\_CB} & \texttt{za\_BC} & \texttt{s\_C} & $-1$\\
+\texttt{a\_DA} & \texttt{a\_AT} & \texttt{b1\_DT} & $1$\\
+\texttt{a\_DA} & \texttt{a\_AC} & \texttt{b0\_DC} & $\frac{1}{2}$\\
+\texttt{a\_DA} & \texttt{a\_AC} & \texttt{b2\_DC} & $1$\\
+\texttt{a\_DA} & \texttt{a\_AD} & \texttt{x\_D} & $1$\\
+\texttt{a\_DA} & \texttt{x\_A} & \texttt{za\_DA} & $1$\\
+\texttt{a\_DA} & \texttt{b0\_AB} & \texttt{za\_DB} & $1$\\
+\texttt{a\_DA} & \texttt{b2\_AB} & \texttt{za\_DB} & $\frac{1}{2}$\\
+\texttt{a\_DA} & \texttt{za\_AD} & \texttt{s\_D} & $-1$\\
+\texttt{a\_DB} & \texttt{a\_BT} & \texttt{b1\_DT} & $-1$\\
+\texttt{a\_DB} & \texttt{a\_BC} & \texttt{b0\_DC} & $\frac{-1}{2}$\\
+\texttt{a\_DB} & \texttt{a\_BC} & \texttt{b2\_DC} & $1$\\
+\texttt{a\_DB} & \texttt{a\_BD} & \texttt{y\_D} & $1$\\
+\texttt{a\_DB} & \texttt{x\_B} & \texttt{za\_DB} & $1$\\
+\texttt{a\_DB} & \texttt{b0\_BA} & \texttt{za\_DA} & $1$\\
+\texttt{a\_DB} & \texttt{b2\_BA} & \texttt{za\_DA} & $\frac{1}{2}$\\
+\texttt{a\_DB} & \texttt{za\_BD} & \texttt{s\_D} & $-1$\\
+\multicolumn{4}{l}{\textit{Degree-two first input}}\\\hline
+\texttt{t} & \texttt{a\_TA} & \texttt{za\_TA} & $1$\\
+\texttt{t} & \texttt{a\_TB} & \texttt{za\_TB} & $1$\\
+\texttt{t} & \texttt{t} & \texttt{s\_T} & $2$\\
+\texttt{x\_A} & \texttt{a\_AT} & \texttt{za\_AT} & $\frac{-1}{2}$\\
+\texttt{x\_A} & \texttt{a\_AD} & \texttt{za\_AD} & $1$\\
+\texttt{x\_A} & \texttt{y\_A} & \texttt{s\_A} & $1$\\
+\texttt{y\_A} & \texttt{a\_AT} & \texttt{za\_AT} & $\frac{-1}{2}$\\
+\texttt{y\_A} & \texttt{a\_AC} & \texttt{za\_AC} & $\frac{-1}{3}$\\
+\texttt{y\_A} & \texttt{x\_A} & \texttt{s\_A} & $1$\\
+\texttt{x\_B} & \texttt{a\_BT} & \texttt{za\_BT} & $\frac{1}{2}$\\
+\texttt{x\_B} & \texttt{a\_BD} & \texttt{za\_BD} & $1$\\
+\texttt{x\_B} & \texttt{y\_B} & \texttt{s\_B} & $1$\\
+\texttt{y\_B} & \texttt{a\_BT} & \texttt{za\_BT} & $\frac{1}{2}$\\
+\texttt{y\_B} & \texttt{a\_BC} & \texttt{za\_BC} & $1$\\
+\texttt{y\_B} & \texttt{x\_B} & \texttt{s\_B} & $1$\\
+\texttt{x\_C} & \texttt{a\_CB} & \texttt{za\_CB} & $1$\\
+\texttt{x\_C} & \texttt{y\_C} & \texttt{s\_C} & $-1$\\
+\texttt{y\_C} & \texttt{a\_CA} & \texttt{za\_CA} & $\frac{-1}{3}$\\
+\texttt{y\_C} & \texttt{x\_C} & \texttt{s\_C} & $-1$\\
+\texttt{x\_D} & \texttt{a\_DB} & \texttt{za\_DB} & $1$\\
+\texttt{x\_D} & \texttt{y\_D} & \texttt{s\_D} & $-1$\\
+\texttt{y\_D} & \texttt{a\_DA} & \texttt{za\_DA} & $1$\\
+\texttt{y\_D} & \texttt{x\_D} & \texttt{s\_D} & $-1$\\
+\texttt{b0\_AB} & \texttt{a\_BT} & \texttt{za\_AT} & $-1$\\
+\texttt{b0\_AB} & \texttt{a\_BC} & \texttt{za\_AC} & $\frac{1}{3}$\\
+\texttt{b0\_AB} & \texttt{a\_BD} & \texttt{za\_AD} & $1$\\
+\texttt{b0\_AB} & \texttt{b0\_BA} & \texttt{s\_A} & $-2$\\
+\texttt{b2\_AB} & \texttt{a\_BC} & \texttt{za\_AC} & $\frac{-1}{6}$\\
+\texttt{b2\_AB} & \texttt{a\_BD} & \texttt{za\_AD} & $\frac{1}{2}$\\
+\texttt{b2\_AB} & \texttt{b2\_BA} & \texttt{s\_A} & $\frac{1}{4}$\\
+\texttt{b0\_BA} & \texttt{a\_AT} & \texttt{za\_BT} & $1$\\
+\texttt{b0\_BA} & \texttt{a\_AC} & \texttt{za\_BC} & $-1$\\
+\texttt{b0\_BA} & \texttt{a\_AD} & \texttt{za\_BD} & $1$\\
+\texttt{b0\_BA} & \texttt{b0\_AB} & \texttt{s\_B} & $-2$\\
+\texttt{b2\_BA} & \texttt{a\_AC} & \texttt{za\_BC} & $\frac{1}{2}$\\
+\texttt{b2\_BA} & \texttt{a\_AD} & \texttt{za\_BD} & $\frac{1}{2}$\\
+\texttt{b2\_BA} & \texttt{b2\_AB} & \texttt{s\_B} & $\frac{1}{4}$\\
+\texttt{b0\_CD} & \texttt{a\_DA} & \texttt{za\_CA} & $\frac{1}{3}$\\
+\texttt{b0\_CD} & \texttt{a\_DB} & \texttt{za\_CB} & $1$\\
+\texttt{b0\_CD} & \texttt{b0\_DC} & \texttt{s\_C} & $2$\\
+\texttt{b2\_CD} & \texttt{a\_DA} & \texttt{za\_CA} & $\frac{-1}{6}$\\
+\texttt{b2\_CD} & \texttt{a\_DB} & \texttt{za\_CB} & $\frac{1}{2}$\\
+\texttt{b2\_CD} & \texttt{b2\_DC} & \texttt{s\_C} & $\frac{-1}{4}$\\
+\texttt{b0\_DC} & \texttt{a\_CA} & \texttt{za\_DA} & $-1$\\
+\texttt{b0\_DC} & \texttt{a\_CB} & \texttt{za\_DB} & $1$\\
+\texttt{b0\_DC} & \texttt{b0\_CD} & \texttt{s\_D} & $2$\\
+\texttt{b2\_DC} & \texttt{a\_CA} & \texttt{za\_DA} & $\frac{1}{2}$\\
+\texttt{b2\_DC} & \texttt{a\_CB} & \texttt{za\_DB} & $\frac{1}{2}$\\
+\texttt{b2\_DC} & \texttt{b2\_CD} & \texttt{s\_D} & $\frac{-1}{4}$\\
+\texttt{b1\_TC} & \texttt{a\_CA} & \texttt{za\_TA} & $\frac{-1}{2}$\\
+\texttt{b1\_TC} & \texttt{a\_CB} & \texttt{za\_TB} & $\frac{1}{2}$\\
+\texttt{b1\_TC} & \texttt{b1\_CT} & \texttt{s\_T} & $-1$\\
+\texttt{b1\_CT} & \texttt{a\_TA} & \texttt{za\_CA} & $\frac{1}{3}$\\
+\texttt{b1\_CT} & \texttt{a\_TB} & \texttt{za\_CB} & $-1$\\
+\texttt{b1\_CT} & \texttt{b1\_TC} & \texttt{s\_C} & $1$\\
+\texttt{b1\_TD} & \texttt{a\_DA} & \texttt{za\_TA} & $\frac{-1}{2}$\\
+\texttt{b1\_TD} & \texttt{a\_DB} & \texttt{za\_TB} & $\frac{-1}{2}$\\
+\texttt{b1\_TD} & \texttt{b1\_DT} & \texttt{s\_T} & $-1$\\
+\texttt{b1\_DT} & \texttt{a\_TA} & \texttt{za\_DA} & $-1$\\
+\texttt{b1\_DT} & \texttt{a\_TB} & \texttt{za\_DB} & $1$\\
+\texttt{b1\_DT} & \texttt{b1\_TD} & \texttt{s\_D} & $1$\\
+\multicolumn{4}{l}{\textit{Degree-three first input}}\\\hline
+\texttt{za\_TA} & \texttt{a\_AT} & \texttt{s\_T} & $2$\\
+\texttt{za\_TB} & \texttt{a\_BT} & \texttt{s\_T} & $-2$\\
+\texttt{za\_AT} & \texttt{a\_TA} & \texttt{s\_A} & $2$\\
+\texttt{za\_AC} & \texttt{a\_CA} & \texttt{s\_A} & $-3$\\
+\texttt{za\_AD} & \texttt{a\_DA} & \texttt{s\_A} & $1$\\
+\texttt{za\_BT} & \texttt{a\_TB} & \texttt{s\_B} & $-2$\\
+\texttt{za\_BC} & \texttt{a\_CB} & \texttt{s\_B} & $1$\\
+\texttt{za\_BD} & \texttt{a\_DB} & \texttt{s\_B} & $1$\\
+\texttt{za\_CA} & \texttt{a\_AC} & \texttt{s\_C} & $3$\\
+\texttt{za\_CB} & \texttt{a\_BC} & \texttt{s\_C} & $-1$\\
+\texttt{za\_DA} & \texttt{a\_AD} & \texttt{s\_D} & $-1$\\
+\texttt{za\_DB} & \texttt{a\_BD} & \texttt{s\_D} & $-1$\\
+\hline\end{longtable}
